@@ -1,0 +1,6 @@
+{
+  "name": "SubNavigationItem",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SubNavigationItem.jsx"
+}

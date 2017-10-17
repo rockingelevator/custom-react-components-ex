@@ -1,0 +1,66 @@
+@import '../../../css/palette.css';
+
+.resumeWrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  //overflow: hidden;
+  min-height: 100%;
+
+  .singleBox {
+    width: 60%;
+
+    .singleBox__page {
+      max-width: 800px;
+      padding: 0;
+    }
+  }
+
+  .btnCreateWrapper {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 20px;
+
+    .button {
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.cvStatsCounterWrapper {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+
+  p {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    font-size: 15px;
+
+    &:first-of-type {
+      margin-right: 10%;
+      color: $dark_grey_text;
+    }
+
+    &:last-of-type {
+      color: $medium_blue_text;
+    }
+
+    .cvStatsCounterWrapper__numbers {
+      font-size: 36px;
+    }
+  }
+}
+
+.emptyContent {
+  height: 100%;
+}

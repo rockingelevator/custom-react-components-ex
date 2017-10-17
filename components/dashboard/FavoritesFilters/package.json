@@ -1,0 +1,6 @@
+{
+  "name": "FavoritesFilters",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FavoritesFilters.jsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "VacancyPreview",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./VacancyPreview.jsx"
+}

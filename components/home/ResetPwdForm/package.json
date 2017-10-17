@@ -1,0 +1,6 @@
+{
+  "name": "ResetPwdForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ResetPwdForm.jsx"
+}

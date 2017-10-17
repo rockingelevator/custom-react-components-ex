@@ -1,0 +1,6 @@
+{
+  "name": "CVDetail",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CVDetail.jsx"
+}

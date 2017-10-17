@@ -1,0 +1,14 @@
+@import '../../../css/palette.css';
+
+.actionsSideBar {
+  width: inherit;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  position: fixed;
+  padding-right: 24px;
+
+  .button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

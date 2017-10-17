@@ -1,0 +1,49 @@
+@import '../../../css/palette.css';
+
+.textAreaWrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: left;
+
+  &.error {
+    .inputLabel {
+      color: $red_error;
+    }
+
+    .textInput {
+      border-bottom: 1px solid $red_error;
+    }
+  }
+}
+
+.textArea {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed $grey_border;
+  padding: 15px 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: .3s;
+  margin-bottom: 30px;
+  resize: none;
+
+  &:focus {
+    border-bottom: 1px solid $blue;
+  }
+}
+
+.errorList {
+  margin: -20px 0 0 0;
+  padding: 0;
+
+  li {
+    color: $red_error;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}

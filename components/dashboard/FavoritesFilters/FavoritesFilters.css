@@ -1,0 +1,58 @@
+@import '../../../css/palette.css';
+
+.rangeWrapper {
+  padding: 0 30px;
+  margin: 25px 0 40px 0;
+
+  .rc-slider-track {
+    background-color: $blue;
+  }
+
+  .rc-slider-handle {
+    border-color: $blue;
+
+    /*&:after {
+      content: attr(data-content);
+      position: absolute;
+      font-size: 10px;
+      top: -22px;
+      min-width: 25px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      background-color: $blue;
+      left: -8px;
+      box-sizing: border-box;
+      padding: 3px;
+      border-radius: 3px;
+    }*/
+  }
+
+  .rc-slider-dot-active {
+    border-color: $blue;
+  }
+
+  .rc-slider-mark {
+    top: 22px;
+  }
+}
+
+.searchFilters {
+  &__checkbox {
+    box-sizing: border-box;
+    padding: 10px 15px 10px 23px;
+
+    &:first-of-type {
+      padding-top: 20px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.filterHeaderWithSet {
+  border-left: 3px solid $blue;
+  opacity: 1;
+}

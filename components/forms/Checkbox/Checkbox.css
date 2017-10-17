@@ -1,0 +1,100 @@
+@import '../../../css/palette.css';
+
+.Collapsible__trigger.is-closed + div { /* fix Collapsible transitions */
+    .checkboxWrapper {
+      opacity: 0;
+      display: none;
+      &.checkboxWrapper__checked {
+        .checkboxIcon {
+          opacity: 0;
+        }
+      }
+    }
+}
+
+.checkboxWrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s;
+
+  .checkboxCell {
+    display: table-cell;
+    vertical-align: center;
+  }
+
+  .checkbox {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid $grey_border;
+    border-radius: 3px;
+  }
+
+  .checkboxIcon {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    color: $blue;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 3px;
+    transition: .3s;
+  }
+
+  label {
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: $medium_grey_text;
+    cursor: pointer;
+  }
+
+  .infoBubble {
+    display: none;
+    float: right;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: $grey_border;
+    padding: 4px;
+    border-radius: 10px;
+    min-width: 10px;
+    text-align: center;
+    margin-top: -17px;
+  }
+
+  &.withBubble {
+    label {
+      margin-right: 30px;
+    }
+
+    .infoBubble {
+      display: block;
+    }
+  }
+
+  &.checkboxWrapper__checked {
+    .checkbox {
+      border-color: $blue;
+    }
+
+    .checkboxIcon {
+      opacity: 1;
+    }
+
+    label {
+      color: $dark_grey_text;
+    }
+
+    .infoBubble {
+      background-color: $blue;
+      color: white;
+    }
+  }
+}

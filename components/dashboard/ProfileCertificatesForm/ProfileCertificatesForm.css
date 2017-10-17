@@ -1,0 +1,26 @@
+.halfInput {
+  width: 45%;
+  display: inline-block;
+  margin-right: 10%;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.certificateraw {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.errorList {
+  margin: -20px 0 0 0;
+  padding: 0;
+
+  li {
+    color: $red_error;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}

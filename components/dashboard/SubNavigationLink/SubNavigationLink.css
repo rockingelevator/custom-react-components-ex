@@ -1,0 +1,48 @@
+/* Link in collapse subnavigation  */
+
+@import '../../../css/palette.css';
+
+.subNavigationLink {
+  display: block;
+  color: $dark_blue_link;
+  font-size: 13px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-left: 3px solid transparent;
+
+  &:first-of-type {
+    padding-top: 20px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 20px;
+  }
+
+  &_active {
+    border: none;
+    background-color: transparent;
+    color: $dark_grey_text;
+    border-left: 3px solid #ccc;
+  }
+
+  &:hover {
+    background-color: #f3f3f3;
+    border-left: 3px solid #ccc;
+    opacity: 1;
+    color: $dark_grey_text;
+  }
+
+  &__rightControl {
+    width: auto;
+    height: 100%;
+    float: right;
+
+    i {
+      font-size: 12px;
+      color: $dark_blue_link;
+      display: inline-block;
+      margin-right: -10px;
+    }
+  }
+}

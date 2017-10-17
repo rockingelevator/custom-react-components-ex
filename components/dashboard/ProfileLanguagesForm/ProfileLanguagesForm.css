@@ -1,0 +1,26 @@
+.halfInput {
+  width: 45%;
+  display: inline-block;
+  margin-right: 10%;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.skillraw {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+
+  label {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}
+
+.skillselect {
+  padding-right: 40px;
+  box-sizing: border-box;
+}

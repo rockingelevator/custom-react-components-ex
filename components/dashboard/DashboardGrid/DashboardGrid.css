@@ -1,0 +1,33 @@
+@import '../../../css/palette.css';
+
+.dashboard {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard__content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 0 0 60px;
+  background-color: $dark_blue_bg;
+}
+
+.dashboardContentWrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 60px;
+
+  .&__row {
+    display: table-row;
+    width: 100%;
+  }
+}

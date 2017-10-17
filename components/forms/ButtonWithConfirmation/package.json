@@ -1,0 +1,6 @@
+{
+  "name": "ButtonWithConfirmation",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ButtonWithConfirmation.jsx"
+}

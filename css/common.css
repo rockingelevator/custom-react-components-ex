@@ -1,0 +1,172 @@
+@import './palette.css';
+
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #333;
+  overflow-y: scroll;
+}
+
+body.locked {
+  height: 100%;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+a, button, input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.textLink {
+  font-size: 13px;
+  color: $blue;
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: 33px;
+  background-image: url('/static/img/logo.svg');
+  background-repeat: no-repeat;
+}
+
+.radio {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #333;
+  background-color: transparent;
+  border: 1px solid #333;
+  margin: 0;
+  font-size: 14px;
+  width: 50%;
+
+  &:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  &.active {
+    color: white;
+    background-color: #333;
+  }
+}
+.groupSelects {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: left;
+  &_clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__block {
+    float: left;
+    width: 50%;
+  }
+  &>label {
+    margin-bottom: 20px;
+  }
+
+  .selectWrapper {
+    width: 30%;
+    display: inline-block;
+    margin-right: 5%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.errorList {
+  margin: -20px 0 0 0;
+  padding: 0;
+
+  li {
+    color: $red_error;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+ul.listTable {
+  display: block;
+  width: 100%;
+  padding: 0;
+  height: auto;
+  margin: 0;
+
+  li {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 13px;
+    padding: 12px 0;
+    box-sizing: border-box;
+
+    label {
+      display: block;
+      float: left;
+      width: 40%;
+      color: $medium_grey_text;
+      padding-right: 20px;
+      box-sizing: border-box;
+      line-height: 25px;
+    }
+
+    .listTable__value {
+      display: inline-block;
+      width: 60%;
+      color: $dark_grey_text;
+      line-height: 25px;
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}
+.details-back {
+  font-size: 0.8rem;
+  color: #37a0f3;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.is-open + .Collapsible__contentOuter { /* fix collapsible bug with dynamic content */
+  height: auto !important;
+  overflow: visible !important;
+}

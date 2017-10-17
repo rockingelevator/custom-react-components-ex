@@ -1,0 +1,6 @@
+{
+  "name": "NoteList",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./NoteList.jsx"
+}

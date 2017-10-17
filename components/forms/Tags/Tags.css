@@ -1,0 +1,21 @@
+@import '../../../css/palette.css';
+
+ul.tags {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    display: inline;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: #e8e8e8;
+    color: $dark_grey_text;
+    font-size: 13px;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    width: auto;
+  }
+}

@@ -1,0 +1,30 @@
+.avatarWrapper {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+
+  div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.userpicSpinner {
+  margin-top: -55px;
+  margin-left: 0;
+}
+
+.uploadingUserpic {
+  opacity: .5;
+}
+
+.errorList {
+  margin: 0;
+  padding: 0;
+
+  li {
+    color: $red_error;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}

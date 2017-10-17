@@ -1,0 +1,275 @@
+@import '../../../css/palette.css';
+
+.topBoxResume {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px rgba(0,0,0,.2);
+  margin-top: 20px;
+
+  .editTitleBoxButton {
+    position: relative;
+    float: right;
+    margin-top: -65px;
+    margin-right: 20px
+  }
+
+  .topBoxResume__header {
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px dashed $grey_border;
+    box-sizing: border-box;
+
+    .iconFav {
+      margin-top: 10px;
+      font-size: 20px;
+      color: $blue;
+      float: right;
+      cursor: pointer;
+    }
+
+    p {
+      display: inline-block;
+      font-size: 13px;
+      color: #999;
+      padding: 0;
+      box-sizing: border-box;
+      margin-right: 20px;
+
+      span.value {
+        color: $dark_grey_text;
+        font-weight: bold;
+      }
+    }
+
+    .resumeActivitySwitcher {
+      float: right;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+  }
+
+  .topBoxResume__content {
+    padding: 20px 20px 15px 20px;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+
+    ul.tags li {
+      background-color: #ddd;
+    }
+
+    .topBoxResume__leftPart {
+      display: inline-block;
+      width: 20%;
+      float: left;
+    }
+
+    .topBoxResume__rightPart {
+      display: inline-block;
+      width: 80%;
+      height: auto;
+      overflow: hidden;
+      min-height: 100px;
+
+      .topBoxResume__titlePart {
+        display: block;
+        float: left;
+        width: 70%;
+      }
+
+      .topBoxResume__sidePart {
+        display: block;
+        float: right;
+        width: 30%;
+        text-align: right;
+
+        h3 {
+          span.small {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0;
+      margin-top: 5px;
+      color: $dark_grey_text;
+    }
+
+    p {
+      font-size: 13px;
+      color: #999;
+      margin: 7px 0;
+    }
+
+    h3 {
+      color: $dark_grey_text;
+      font-weight: 300;
+      font-size: 16px;
+      margin: 7px 0;
+    }
+
+    .avatar {
+      border: 5px solid white;
+    }
+  }
+
+  &.topBoxResume_active {
+    background-color: $blue;
+    box-shadow: none;
+
+    .topBoxResume__header {
+      border-bottom-color: rgba(255,255,255,.3);
+
+      p {
+        color: white;
+        opacity: .7;
+
+        span.value {
+          color: white;
+        }
+      }
+
+      .switchWrapper {
+        .switch.active {
+          border-color: $blue !important;
+        }
+      }
+
+      label {
+        color: white;
+      }
+
+      .iconFav {
+        color: white;
+      }
+    }
+
+    .topBoxResume__content {
+      .topBoxResume__rightPart {
+        .topBoxResume__sidePart {
+          h3 {
+            color: white;
+            span.small {
+              opacity: .7;
+            }
+          }
+        }
+      }
+
+      h2 {
+        color: white;
+      }
+
+      p {
+        color: white;
+        opacity: .7;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      ul.tags {
+        li {
+          color: $blue;
+          background-color: white;
+        }
+      }
+    }
+    .editTitleBoxButton {
+      border-color: white;
+      color: white;
+
+      &:hover {
+        color: $blue;
+        background-color: white;
+      }
+    }
+  }
+}
+
+.mainBoxResume {
+  width: 100%;
+  height: auto;
+  /*overflow: hidden;*/
+  padding: 20px 40px;
+  box-sizing: border-box;
+
+  &:after {
+    content: ' ';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+
+  .resumeSectionEditButton {
+    float: right;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .listBlock {
+    padding: 30px 0;
+    box-sizing: border-box;
+    border-bottom: 1px dashed $grey_border;
+
+    &:last-of-type {
+      border-bottom: 0;
+      }
+  }
+
+  .skillraw {
+    .removeRowIcon {
+      right: auto;
+      margin-left: -20px;
+    }
+  }
+
+  p.dates {
+    font-size: 13px;
+    color: #999;
+  }
+
+  .formLayerRow:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.resumeFooter {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-top: 1px dashed $grey_border;
+
+  button {
+    margin-right: 20px;
+  }
+  .confirmationWrapper {
+    display: inline-block;
+  }
+}
+
+.resumeFooter > button {
+  margin: 0;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ProfileCoursesForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ProfileCoursesForm.jsx"
+}

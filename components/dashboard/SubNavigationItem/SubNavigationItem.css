@@ -1,0 +1,71 @@
+@import '../../../css/palette.css';
+
+.subnavigation__item a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  color: $dark_blue_link;
+  opacity: .5;
+  cursor: pointer;
+  background-color: transparent;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #f3f3f3;
+    border-left: 3px solid $blue;
+    opacity: 1;
+    color: $dark_grey_text;
+  }
+
+  &.active {
+    opacity: 1;
+    color: $dark_grey_text;
+    background-color: #f3f3f3;
+    border-left: 3px solid $blue;
+
+    &.active:hover {
+      background-color: #f3f3f3;
+      border-left: 3px solid $blue;
+    }
+  }
+}
+
+.is-open .subnavigation__item a {
+  opacity: 1;
+  color: $dark_grey_text;
+  background-color: #f3f3f3;
+  border-left: 3px solid $blue;
+
+  &:hover {
+    background-color: #f3f3f3;
+    border-left: 3px solid $blue;
+  }
+}
+
+.sidepanel_right {
+  .subnavigation__item a {
+    color: $dark_blue_link;
+
+    &:hover {
+      background-color: $dark_blue_bg;
+    }
+
+    &.active {
+      opacity: 1;
+      color: $dark_grey_text;
+      background-color: $dark_blue_bg;
+      border-left: 3px solid $blue;
+
+      &.active:hover {
+        background-color: $dark_blue_bg;
+        border-left: 3px solid $blue;
+      }
+    }
+  }
+}

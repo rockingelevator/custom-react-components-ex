@@ -1,0 +1,38 @@
+@import '../../../css/palette.css';
+
+
+.Collapsible__trigger.is-closed + .Collapsible__contentOuter {
+  .resumeFillStats {
+    p.scoreLabel {
+      display: none;
+    }
+  }
+}
+
+.resumeFillStats{
+  width: 100%;
+  height: auto;
+
+  .resumeFillStatCircle {
+    width: 150px;
+    margin: 20px auto;
+    max-width: 200px;
+    display: block;
+  }
+
+  p.scoreLabel {
+    font-size: 30px;
+    color: $blue;
+    font-weight: 300;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 57px;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    .small {
+      font-size: 16px;
+    }
+  }
+}

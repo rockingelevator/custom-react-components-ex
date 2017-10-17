@@ -1,0 +1,5 @@
+.sidepanel {
+    &_left {
+        padding-left: 60px;
+    }
+}

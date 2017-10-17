@@ -1,0 +1,6 @@
+{
+  "name": "VacancyEditSkillsForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./VacancyEditSkillsForm.jsx"
+}

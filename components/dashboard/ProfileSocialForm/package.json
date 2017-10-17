@@ -1,0 +1,6 @@
+{
+  "name": "ProfileSocialForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ProfileSocialForm.jsx"
+}

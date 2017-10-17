@@ -1,0 +1,6 @@
+{
+  "name": "NewPasswordForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./NewPasswordForm.jsx"
+}

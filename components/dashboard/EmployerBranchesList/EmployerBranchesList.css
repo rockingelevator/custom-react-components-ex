@@ -1,0 +1,112 @@
+@import '../../../css/palette.css';
+
+.branchesListWrapper {
+  margin-top: -30px;
+}
+
+.branchesList__subform {
+  display: block;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 30px 40px 10px 40px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 1px rgba(0,0,0,.15);
+}
+
+.branchFilterBar {
+  width: 100%;
+  display: block;
+
+  .branchFilterBar__searchFieldWrapper {
+    width: 70%;
+    display: block;
+    float: left;
+    padding-top: 8px;
+    box-sizing: border-box;
+  }
+
+  .branchFilterBar__filterWrapper {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
+.branchesList {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin-top: -20px;
+
+  .branchesList__item {
+    display: table-row;
+    width: 100%;
+    font-size: 15px;
+
+    & > div {
+      padding: 30px 0;
+      box-sizing: border-box;
+      border-bottom: 1px dashed $grey_border;
+    }
+
+    &:last-of-type > div {
+      border-bottom: 0;
+    }
+
+    &.branchesList__titleRow {
+      text-transform: uppercase;
+
+      .branchesList__branchTitle,
+      .branchesList__branchAddress {
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .branchesList__branchTitle {
+    display: table-cell;
+    width: 45%;
+    font-weight: bold;
+  }
+
+  .branchesList__branchAddress {
+    display: table-cell;
+    width: 45%;
+    font-size: 13px;
+
+    .branchAddress__city {
+      font-weight: bold;
+    }
+
+    .branchAddress__address {
+      color: #999;
+    }
+  }
+
+  .branchesList__itemAction {
+    display: table-cell;
+    width: 10%;
+    text-align: right;
+    color: #999;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.layerOpenner {
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  color: $blue;
+  border-top: 1px solid $light_blue_border;
+  border-bottom: 1px solid $light_blue_border;
+  background-color: $light_blue_bg;
+}

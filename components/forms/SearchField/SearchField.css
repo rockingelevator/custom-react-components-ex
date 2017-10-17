@@ -1,0 +1,19 @@
+.searchField {
+
+  width: 100%;
+
+  i {
+    position: absolute;
+    color: #999;
+  }
+
+  input {
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

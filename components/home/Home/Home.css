@@ -1,0 +1,20 @@
+@import '../../../css/palette.css';
+
+.home__wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: $bg_light_grey;
+}
+
+.banner_button {
+  background-color: transparent;
+  border: 1px solid white;
+  font-weight: 700;
+  padding: 15px 20px !important;
+  font-size: 13px !important;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}

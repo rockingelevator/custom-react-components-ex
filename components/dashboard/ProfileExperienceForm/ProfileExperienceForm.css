@@ -1,0 +1,55 @@
+@import '../../../css/palette.css';
+
+.halfInput {
+  width: 45%;
+  display: inline-block;
+  margin-right: 10%;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.experienceraw {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+
+  label {
+    font-weight: bold;
+    font-size: 13px;
+    height: 30px;
+  }
+}
+
+.errorList {
+  margin: -20px 0 0 0;
+  padding: 0;
+
+  li {
+    color: $red_error;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+.groupSelects {
+
+  &__block {
+    width: 45%;
+    margin-right: 10%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .selectWrapper {
+    width: 45%;
+    display: inline-block;
+    margin-right: 10%;
+  }
+}
+.error .groupSelects__block .errorList {
+    top: -30px;
+}

@@ -1,0 +1,32 @@
+@import '../../../css/palette.css';
+
+.confirmationWrapper {
+  p, .button {
+    display: inline-block;
+  }
+
+  p {
+    font-size: 15px;
+    color: $red_error;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .button.actionButton {
+    background-color: $red_error;
+    color: white;
+    border: none;
+  }
+
+  .button.cancelButton {
+    border-color: $red_error;
+    color: $red_error;
+    float: none;
+
+    &:hover {
+      background-color: $red_error;
+      color: white;
+    }
+  }
+}

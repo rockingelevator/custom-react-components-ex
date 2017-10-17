@@ -1,0 +1,19 @@
+.formFooter {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+
+  i.icon-spin5 {
+    margin-top: 10px;
+  }
+}
+
+.cancelButton {
+  float: left;
+}
+
+.submitButton {
+  float: right;
+}

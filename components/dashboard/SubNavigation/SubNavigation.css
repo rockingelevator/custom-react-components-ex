@@ -1,0 +1,27 @@
+@import '../../../css/palette.css';
+
+.subnavigation {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+  }
+
+  a.active {
+    opacity: 1;
+    color: #333;
+    background-color: $dark_blue_bg;
+    border-left: 2px solid $blue;
+
+    &.active:hover {
+      background-color: $dark_blue_bg;
+      border-left: 2px solid $blue;
+    }
+  }
+}

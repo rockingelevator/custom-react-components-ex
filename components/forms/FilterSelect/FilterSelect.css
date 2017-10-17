@@ -1,0 +1,18 @@
+@import '../../../css/palette.css';
+
+.filterSelect {
+  .Select {
+    .Select-control {
+      height: 30px;
+      font-size: 13px;
+      background-color: #f3f3f3;
+      border: 0;
+      cursor: pointer;
+
+      &:hover {
+        border: 0;
+        box-shadow: 0 1px 0 rgba(0,0,0,.2);
+      }
+    }
+  }
+}

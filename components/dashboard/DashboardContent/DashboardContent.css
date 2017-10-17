@@ -1,0 +1,66 @@
+.dashboardContentWrapper__dashboardContent {
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: top;
+  width: 60%;
+
+  &_padding {
+    padding: 10px 20px;
+  }
+  &_twoColumns{
+    width: 100%;
+  }
+}
+
+.singleBox {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+
+  h2 {
+    font-size: 24px;
+    margin: 10px 0 20px 0;
+    font-weight: 300;
+  }
+}
+
+.singleBox__page {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  box-sizing: border-box;
+  margin: 0 auto;
+
+}
+
+.formWrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: left;
+  button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .formFooter {
+    margin-top: 60px;
+  }
+
+  .radiogroup {
+    margin: 30px 0;
+  }
+}

@@ -1,0 +1,8 @@
+.resumeEditSummaryBox {
+  display: block;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+}

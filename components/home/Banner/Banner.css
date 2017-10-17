@@ -1,0 +1,39 @@
+.banner__wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-color: #30B3A3;
+  text-align: center;
+}
+
+.banner__cover {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  /*background-image: url('/static/img/landing_bg.jpg');*/
+}
+
+.banner__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.banner__title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  font-size: 40px;
+  color: white;
+  padding: 0;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}

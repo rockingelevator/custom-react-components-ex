@@ -1,0 +1,7 @@
+@import '../../../css/palette.css';
+
+.fetchMoreBtn {
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+}

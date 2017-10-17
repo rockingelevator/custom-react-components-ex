@@ -1,0 +1,122 @@
+@import '../../../css/palette.css';
+
+.listHeader {
+  margin-top: -20px;
+  width: 100%;
+
+  &__totalCount {
+    display: inline-block;
+    width: 50%;
+    font-size: 14px;
+    color: $medium_blue_text;
+    margin: 0;
+
+    strong {
+      /*color: $dark_grey_text;*/
+    }
+  }
+
+  &__sortBox {
+    display: inline;
+    width: 50%;
+    float: right;
+    margin-top: -10px;
+
+    .selectWrapper {
+      text-align: right;
+      margin-bottom: 0;
+
+      label {
+        display: none;
+      }
+
+      .Select {
+        .Select-control {
+          border-bottom: none;
+          font-size: 14px;
+          color: $medium_blue_text;
+        }
+      }
+      .has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+        color: $medium_blue_text;
+      }
+    }
+  }
+}
+
+.dashboardContentWrapper {
+    /*background-color: #EDF1F3;*/
+        &__sorting {
+            flex-basis: 40%;
+            text-align: right;
+
+            label {
+                display: none;
+            }
+            .has-value.Select--single > .Select-control .Select-value .Select-value-label,
+            .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label,
+            .Select--single > .Select-control .Select-value,
+            .Select-placeholder {
+                color: #276a9f;
+                text-align: right;
+            }
+            .Select--single > .Select-control .Select-value {
+                padding-right: 20px;
+            }
+            .Select-arrow {
+                border-color: #2F3E4D transparent transparent;
+            }
+            .is-open > .Select-control .Select-arrow {
+                border-color: transparent transparent #2F3E4D;
+            }
+            .Select-arrow-zone:hover > .Select-arrow {
+                border-top-color: #2F3E4D;
+            }
+            .Select-menu-outer {
+                text-align: right;
+            }
+            .halfrow {
+                width: 100% !important;
+                margin-right: 0 !important;
+            }
+            .Select-input {
+                input {
+                    border: 0;
+                    clip: rect(0 0 0 0);
+                    height: 1px;
+                    width: 1px;
+                    margin: -1px;
+                    padding: 0;
+                    position: absolute;
+                }
+            }
+            .selectWrapper {
+                margin-bottom: 0;
+                z-index: 100;
+                position: relative;
+
+                .Select .Select-control {
+                    border-bottom: none;
+                }
+            }
+        }
+        &__title {
+            color: #276a9f;
+            margin: 0;
+            flex-basis: 60%;
+            span {
+                color: #000;
+            }
+            &_flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-small {
+                    @extend .dashboardContentWrapper__title_flex;
+                    width: 100%;
+                    max-width: 650px;
+                    margin: 0 auto;
+                }
+            }
+        }
+}

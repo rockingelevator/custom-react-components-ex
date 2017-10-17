@@ -1,0 +1,41 @@
+@import '../../../css/palette.css';
+
+.collapseSection {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-top: 1px dashed $grey_border;
+  border-bottom: 1px dashed $grey_border;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-color: $bg_light_grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light_blue_bg;
+  }
+
+  & + .collapseSection {
+    border-top: none;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  p {
+    font-size: 15px;
+    color: $dark_grey_text;
+    margin: 0;
+  }
+
+  .openIcon {
+    float: right;
+    color: $medium_grey_text;
+    margin-top: -15px;
+    transition: all 0.2s linear;
+  }
+}
+.is-open .openIcon {
+  transform: rotate(-180deg);
+}

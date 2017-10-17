@@ -1,0 +1,129 @@
+@import './palette.css';
+
+.formLayerRow {
+  padding: 30px 30px 1px 30px;
+  box-sizing: border-box;
+
+  &:first-of-type {
+    margin-top: -40px;
+  }
+}
+
+.formLayerRow.evenrow {
+  background-color: $bg_light_grey;
+}
+
+.formrow {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0;
+  height: auto;
+
+  & > .inputLabel {
+    margin-bottom: -8px;
+  }
+}
+
+.halfrow {
+  display: inline-block !important;
+  width: 45% !important;
+  margin-right: 10% !important;
+}
+
+.halfrow:last-of-type {
+  margin-right: 0 !important;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+  margin-top: 10px;
+
+  input {
+    border: 0;
+    border-bottom: 1px dashed $grey_border;
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: transparent;
+  }
+
+  .react-datepicker__close-icon::after {
+    background-color: transparent;
+    color: #999;
+    font-size: 16px;
+    right: 1px;
+  }
+
+  & + .errorList {
+    margin-top: -5px;
+  }
+}
+
+.inputLabel {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  transition: .3s;
+
+  &_default {
+    color: #bbb;
+  }
+
+  &_focus {
+    color: $blue;
+  }
+
+}
+
+.formlink {
+  display: block;
+  font-size: 14px;
+  color: $blue;
+  margin: 30px 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.reactTelephoneInput {
+  display: block;
+  width: 100% !important;
+  margin-bottom: 30px !important;
+
+  input {
+    border: 0 !important;
+    border-bottom: 1px dashed $grey_border !important;
+    background-color: transparent !important;
+    font-size: 15px !important;
+    padding: 12px 40px 12px 50px !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    box-shadow: none !important;
+
+    &.invalid-number {
+      border-bottom: 1px solid $red_error !important;
+    }
+  }
+
+  .flag-dropdown {
+    border: 0 !important;
+    background-color: transparent !important;
+    padding-top: 11px !important;
+  }
+
+  & + .removeRowIcon {
+    margin-top: -62px;
+    margin-right: 0;
+  }
+}
+
+.removeRowIcon {
+  position: absolute;
+  right: 0;
+  margin-top: 14px;
+  color: #bbb;
+}

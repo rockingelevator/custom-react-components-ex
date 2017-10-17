@@ -1,0 +1,6 @@
+{
+  "name": "CollapseSection",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CollapseSection.jsx"
+}

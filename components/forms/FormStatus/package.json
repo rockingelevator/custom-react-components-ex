@@ -1,0 +1,6 @@
+{
+  "name": "FormStatus",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FormStatus.jsx"
+}

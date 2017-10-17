@@ -1,0 +1,6 @@
+{
+  "name": "RequireRoleForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./RequireRoleForm.jsx"
+}

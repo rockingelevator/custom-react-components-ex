@@ -1,0 +1,22 @@
+@import '../../../css/palette.css';
+
+.switchWrapper {
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  .switch {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+  }
+
+  label {
+    display: inline-block;
+    color: $dark_grey_text;
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: bold;
+  }
+}

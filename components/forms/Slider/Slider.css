@@ -1,0 +1,13 @@
+@import '../../../css/palette.css';
+
+/*.sliderHandle {
+  position: absolute;
+  margin-left: -7px;
+  margin-top: -5px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 2px $blue;
+  background-color: #fff;
+}*/

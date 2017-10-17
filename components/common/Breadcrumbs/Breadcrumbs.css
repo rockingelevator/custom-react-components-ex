@@ -1,0 +1,37 @@
+@import '../../../css/palette.css';
+
+.breadcrumbs {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin: 0 35px 0 0;
+    display: inline;
+
+    a {
+      font-size: 14px;
+      color: $dark_blue_link;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:after {
+      font-family: 'icons-font';
+      content: '\e812';
+      display: inline;
+      position: absolute;;
+      float: right;
+      width: 16px;
+      height: 16px;
+      margin-left: 15px;
+      color: $dark_blue_link;
+      margin-top: -1px;
+    }
+  }
+}

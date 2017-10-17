@@ -1,0 +1,85 @@
+@import '../../../css/palette.css';
+
+.sidePanelCardsList {
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  min-width: 235px;
+  width: 20%;
+  background-color: white;
+  top: 0;
+  padding-top: 60px;
+  transition: 0.3s;
+
+  .card {
+    margin: 0;
+    min-height: auto;
+    border-bottom: 1px dashed $grey_border;
+    box-shadow: none;
+
+    .card__actions {
+      border-right: none;
+      width: 35px;
+
+      .checkboxWrapper {
+        display: none;
+      }
+
+      .favIcon {
+        top: 21px;
+      }
+
+      .messageIcon {
+        display: none;
+      }
+
+      .messageIcon.withBubble:after {
+        right: 5px;
+      }
+    }
+
+    .card__body {
+      height: auto;
+      padding: 10px 20px;
+
+      &.selected {
+        background-color: $bg_light_grey;
+      }
+
+      &.withBar {
+        padding-left: 50px;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+  }
+
+  .fetchMoreBtn {
+    display: block;
+    margin: -40px auto 80px auto;
+    width: 90%;
+  }
+
+  &__card {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 15px;
+      color: $blue;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 13px;
+      color: $dark_grey_text;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@import '../../../css/palette.css';
+
+.dashboard {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard__content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 0 0 60px;
+  background-color: $dark_blue_bg;
+}
+
+.sidepanel + .singleBox {
+  margin-left: 20%;
+}
+.dashboardContentWrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 60px;
+
+  .dashboardContentWrapper__row {
+    display: table-row;
+    width: 100%;
+
+    .dashboardSidePanel {
+      display: table-cell;
+      width: 20%;
+      min-width: 235px;
+      vertical-align: top;
+    }
+
+    .dashboardContentWrapper__dashboardContent {
+      box-sizing: border-box;
+      display: table-cell;
+      vertical-align: top;
+      width: 60%;
+
+      &_padding {
+        padding: 10px 20px;
+      }
+      &_twoColumns{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sidepanel {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  .btnsWrapper {
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+
+    .button {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &_right {
+    background-color: $medium_blue_bg;
+
+
+    .Collapsible__contentInner {
+      border-bottom: 1px dashed #bccad1;
+    }
+  }
+
+  .sidePanel__text {
+    color: $medium_blue_text;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    strong {
+      color: $dark_grey_text;
+      font-weight: 700;
+    }
+
+  }
+
+  .sidepanel__listEmptyLabel {
+    font-size: 13px;
+    color: #999;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+}
+
+.sidepanel__title {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #276A9F;
+    opacity: .5;
+    cursor: pointer;
+    background-color: transparent;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: #f3f3f3;
+      border-left: 3px solid #37A0F3;
+      opacity: 1;
+      color: #505050;
+    }
+}
+.is-open .sidepanel__title {
+  opacity: 1;
+  color: #505050;
+  background-color: #f3f3f3;
+  border-left: 3px solid #37A0F3;
+}
+body .dashboardContentWrapper .dashboardContentWrapper__row .dashboardContentWrapper__dashboardContent_small{
+      width: 25%;
+}

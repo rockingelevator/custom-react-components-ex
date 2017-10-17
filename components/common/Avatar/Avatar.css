@@ -1,0 +1,17 @@
+@import '../../../css/palette.css';
+
+.avatar {
+  background-color: $dark_blue_bg;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &_large, &_large img {
+    width: 90px;
+    height: 90px;
+  }
+
+  &_small, &_small img {
+    width: 45px;
+    height: 45px;
+  }
+}

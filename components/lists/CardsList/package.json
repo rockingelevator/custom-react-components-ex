@@ -1,0 +1,6 @@
+{
+  "name": "CardsList",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CardsList.jsx"
+}

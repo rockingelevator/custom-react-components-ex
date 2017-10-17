@@ -1,0 +1,6 @@
+{
+  "name": "ProfileMessangerForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ProfileMessangerForm.jsx"
+}

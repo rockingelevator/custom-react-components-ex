@@ -1,0 +1,30 @@
+@import '../../../css/palette.css';
+
+.radiogroup {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  border: none;
+
+  label {
+    display: inline;
+    margin-right: 30px;
+  }
+
+  .radio {
+    width: auto;
+    display: inline;
+    font-size: 14px;
+    color: $blue;
+    font-weight: 700;
+    border: 0;
+    background-color: transparent;
+    margin-right: 20px;
+
+    &.active {
+      color: #333;
+    }
+  }
+}

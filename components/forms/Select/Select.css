@@ -1,0 +1,99 @@
+@import '../../../css/palette.css';
+
+.selectWrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-bottom: 30px;
+
+  .inputLabel {
+    color: #bbb;
+    margin-bottom: 5px;
+  }
+
+  &.error {
+    .inputLabel {
+      color: $red_error;
+    }
+
+    .textInput {
+        border-bottom: 1px solid $red_error;
+    }
+    
+    .Select-placeholder {
+      border-bottom: 1px solid $red_error;
+    }
+
+  .errorList {
+    margin-top: -5px;
+    top: 0;
+  }
+  }
+
+  .Select{
+    .Select-control {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px dashed $grey_border;
+      font-size: 15px;
+      padding-left: 0;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      .Select-placeholder,
+      .Select-input {
+        padding-left: 0;
+      }
+
+    }
+
+    .Select-value {
+      padding-left: 0;
+      margin-right: 5px;
+    }
+
+    .Select-arrow-zone {
+      padding-right: 0;
+      text-align: right;
+    }
+  }
+}
+
+.Select--multi .Select-control .Select-input {
+  margin-left: 0;
+}
+
+.textInput {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed $grey_border;
+  padding: 12px 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: .3s;
+  margin-bottom: 30px;
+
+  &:focus {
+    border-bottom: 1px solid $blue;
+  }
+}
+
+.errorList {
+  margin: -20px 0 0 0;
+  padding: 0;
+
+  li {
+    color: $red_error;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+.selectWrapper.error .Select .Select-control {
+  border-bottom: none;
+}

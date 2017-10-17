@@ -1,0 +1,66 @@
+@import '../../../css/palette.css';
+@import '../../../css/common.css';
+
+.home_header__wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  padding: 0 30px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  margin-top: 30px;
+  float: left;
+}
+
+.header_navigation {
+  margin: 0 20px;
+  padding: 0;
+  text-align: center;
+  color: $green;
+}
+
+.header_navigation__navitem {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  padding-top: 40px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  margin-right: 40px;
+
+  &_active {
+    border-bottom: 2px solid $green;
+  }
+}
+
+.navitem__link {
+  font-size: 14px;
+}
+
+.auth_controls_box {
+  float: right;
+  margin-top: -71px;
+  display: flex;
+  align-items: center;
+  a {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+  }
+}
+
+.header_btn {
+  background-color: $green;
+  border: 1px solid $green;
+
+  &_outline {
+    border: 1px solid $green;
+    color: $green;
+  }
+}

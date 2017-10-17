@@ -1,0 +1,5 @@
+.errorList {
+  color: $red_error;
+  font-size: 14px;
+  padding: 0;
+}

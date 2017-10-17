@@ -1,0 +1,15 @@
+@import '../../../css/palette.css';
+
+.layerOpener {
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  color: $blue;
+  border-top: 1px solid $light_blue_border;
+  border-bottom: 1px solid $light_blue_border;
+  background-color: $light_blue_bg;
+}
