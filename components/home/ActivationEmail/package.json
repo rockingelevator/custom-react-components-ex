@@ -1,6 +1,0 @@
-{
-  "name": "ActivationEmail",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./ActivationEmail.jsx"
-}
